@@ -3,8 +3,8 @@
 #include <stdbool.h>
 
 #define MAXSIZE 4 // 存储图片的数量
-int count = 0;
-bool IsMove = false;
+int count = 0;//当前播放的图片在数组的下标
+bool IsMove = false;//判断是否有外界操作打断循环
 
 void *f(void *arg) // 实现每隔1s切换图片
 {
